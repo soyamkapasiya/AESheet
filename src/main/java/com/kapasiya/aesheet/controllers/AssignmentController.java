@@ -41,4 +41,11 @@ public class AssignmentController
     {
         assignmentRepository.deleteById(id);
     }
+
+    @PutMapping("/assignment")
+    public List<Assignment> updateAssignmentDetails(@RequestBody Assignment assignment)
+    {
+        System.out.println(assignment.getAssignmentId());
+        return this.assignmentServiceDef.updateAssignmentDetails(assignment);
+    }
 }

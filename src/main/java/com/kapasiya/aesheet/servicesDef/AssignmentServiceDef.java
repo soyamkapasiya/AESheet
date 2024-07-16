@@ -1,6 +1,9 @@
 package com.kapasiya.aesheet.servicesDef;
 
 import com.kapasiya.aesheet.entities.Assignment;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 
 public interface AssignmentServiceDef
@@ -9,7 +12,7 @@ public interface AssignmentServiceDef
 
     public Assignment getAssignment(long assignmentId);
 
-    public Assignment updateAssignment(Assignment assignment);
+    public List<Assignment> updateAssignmentDetails(Assignment assignment);
 
     public void deleteAssignment(long assignmentId);
 }

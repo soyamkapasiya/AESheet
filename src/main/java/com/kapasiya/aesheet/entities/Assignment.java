@@ -70,4 +70,15 @@ public class Assignment
     public void setDate(String date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "Assignment{" +
+                "assignmentId=" + assignmentId +
+                ", stream='" + stream + '\'' +
+                ", topics='" + topics + '\'' +
+                ", dailyStatusUpdates='" + dailyStatusUpdates + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }
